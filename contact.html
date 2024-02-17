@@ -184,49 +184,14 @@ IDRISI KAIF
               <div class="block-title">
                 <h2>How Can I Help You?</h2>
               </div>
-
-              <form id="contact_form" class="contact-form" action="" onsubmit="return validateForm()" method="post">
-
-                <div class="messages"></div>
-
-                <div class="controls two-columns">
-                  <div class="fields clearfix">
-                    <div class="left-column">
-                      <div class="form-group form-group-with-icon">
-                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
-                        <div class="form-control-border"></div>
-                        <div class="help-block with-errors"></div>
-                      </div>
-
-                      <div class="form-group form-group-with-icon">
-                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
-                        <div class="form-control-border"></div>
-                        <div class="help-block with-errors"></div>
-                      </div>
-
-                      <div class="form-group form-group-with-icon">
-                        <input id="form_subject" type="text" name="subject" class="form-control" placeholder="Subject" required="required" data-error="Subject is required.">
-                        <div class="form-control-border"></div>
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="right-column">
-                      <div class="form-group form-group-with-icon">
-                        <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="7" required="required" data-error="Please, leave me a message."></textarea>
-                        <div class="form-control-border"></div>
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI" data-theme="dark"></div>
-
-                  <input type="submit" class="button btn-send disabled" value="Send message">
-                </div>
-                 
-
-              </form>
- <div id="error-message"></div>
+<form id="myForm" action="process.php" method="post" onsubmit="return validateForm()">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<div id="error-message"></div>
             </div>
 
 
